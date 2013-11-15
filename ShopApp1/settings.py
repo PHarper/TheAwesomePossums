@@ -30,13 +30,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admin',
+   'chris',
 )
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -80,3 +83,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+        '/Users/chrislebaron/codecamp/TheAwesomePossums/TheAwesomePossums/static/',
+    )
+
+TEMPLATE_DIRS = (
+        '/Users/chrislebaron/codecamp/TheAwesomePossums/TheAwesomePossums/templates',
+    )
