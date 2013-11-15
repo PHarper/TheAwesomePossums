@@ -85,9 +85,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-        '/Users/chrislebaron/codecamp/TheAwesomePossums/TheAwesomePossums/static/',
+        './static/',
     )
 
 TEMPLATE_DIRS = (
-        '/Users/chrislebaron/codecamp/TheAwesomePossums/TheAwesomePossums/templates',
+        './templates/',
     )
