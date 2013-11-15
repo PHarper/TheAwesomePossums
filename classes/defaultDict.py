@@ -13,7 +13,6 @@ class DefaultDict():
                         count = cindex
                         count += line[cindex:].index(',')
                         sub = line[cindex+1:count]
-                        print count
                         subs = {sub:[]}
                         done = False
                         while done == False:
