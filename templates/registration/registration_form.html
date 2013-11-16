@@ -4,7 +4,8 @@
 
 {% block content %}
 	<h2>Register</h2>
-	<a href="/accounts/login/?next=/forum/">Login</a>
+	
+	<a href="/accounts/login/">Login</a>
 	<form action="/accounts/register/" method="POST">{% csrf_token %}
         <table>
         	{{ form.as_table }}
