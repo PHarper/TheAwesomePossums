@@ -1,9 +1,12 @@
 #item class  
 # will allow a createNew item
 
+<<<<<<< HEAD
 #import popularity
 import rate
 
+=======
+>>>>>>> c782a90feb974e190c2295117f8510adc80f8900
 
 class Item():
 
