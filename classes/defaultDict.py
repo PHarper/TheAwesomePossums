@@ -1,5 +1,7 @@
 #dictionary Creation for Class, Subclass, dict
 # rate & price(within each SubCategory) > Item(within each SubCategory) > SubCatagoryList(within each Category) > CategoryList
+from item import Item
+
 
 class DefaultDict():
         def __init__(self):
@@ -34,11 +36,17 @@ class DefaultDict():
                         if subCategoryDict in self.defultDictionary.get(mainCategoryName):
                                 pass
                         self.defaultDictionary[mainCategoryName].append(subCategoryDict)
+
                         
         
         
-        def itemCreate(self, itemname):
-                pass
+        def itemCreate(self,name,rate,price,cat,subcat, popularity):
+            i = Item(name,rate,price,popularity)
+            self.MainDict[cat][subcat].append(i)
+
+
+
+
                 
                 
         def rateItem(self, item):
@@ -50,3 +58,10 @@ class DefaultDict():
                 
         
 a = DefaultDict()
+a.itemCreate('toothpaste', 3, 1, 'Pets', 'Pet Grooming,', 0)
+a.itemCreate('comb', 78, 40000, 'Pets', 'Pet Grooming,', 10)
+
+print a.MainDict
+
+
+
