@@ -2,7 +2,7 @@
 # will allow a createNew item
 
 
-#import popularity
+##import popularity
 import rate
 
 
@@ -15,6 +15,7 @@ class Item():
                 self.price = price
                 self.popularity = popularity
 
+        
         def getName(self):
                 return self.name
 
@@ -23,6 +24,7 @@ class Item():
 
         def getPrice(self):
                 return self.price
+
 
         def getPopularity(self):
                 return self.popularity
@@ -35,12 +37,8 @@ class Item():
 
 
 
-        def createNew(self):
+        def addItem(self):
+        	
                 pass
 
-
-i = Item('book',5,10,10)
-i.editPrice(20)
-print i.getPrice()
-print i
 
