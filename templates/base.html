@@ -8,6 +8,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- slider stuff -->
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}demo.css" />
+        <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}style.css" />
+        <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}custom.css" />
+    <script type="text/javascript" src="{{STATIC_URL}}modernizr.custom.79639.js"></script>
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}styleNoJS.css" />
+    </noscript>
 
     <title>
       {% block title %}{% endblock %}
@@ -45,7 +54,7 @@
       
         </div>
         <div class="navbar-collapse collapse">
-          
+
           {% block login %}
           <form action="accounts/login/?next{{ next|default:"/"}}" method="post" id="login-form" class="navbar-form navbar-right">
             {% if not user.is_authenticated %}
@@ -80,7 +89,7 @@
      <div class="push"></div>
      </div> <!-- /container -->
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>&copy; indigent 2013</p>
       </footer>
     </div> <!-- wrapper -->
 
@@ -88,7 +97,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    
     <script src="{{STATIC_URL}}//bootstrap.min.js"></script>
   </body>
 </html>

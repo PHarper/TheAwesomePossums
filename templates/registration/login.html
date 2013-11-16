@@ -13,7 +13,7 @@
               <input id="id_password" name="password" type="password" placeholder="Password" class="form-control">
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
-            <a href="accounts/login/">login</a> | <a
+           <a
           href="accounts/register/">register</a>{% endif %}
 
 
@@ -21,8 +21,8 @@
 {% endif %}
 {% endblock %}
 {% block content %}
-{% if error_message %}
-<p class="errornote">{{ error_message }}</p>
+{% if form.errors %}
+<p class="errornote">{{ form.errors }}</p>
 {% endif %}
 <div id="content-main">
     <form action="?next{{ next|default:"/"}}" method="post" id="login-form">{% csrf_token %}

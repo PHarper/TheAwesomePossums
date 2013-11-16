@@ -8,3 +8,10 @@ body {
 #logo {
 
 }
+
+#sliderbox {
+	display:block;
+	min-height:400px;
+	max-height:100px;
+	
+}
