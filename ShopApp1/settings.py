@@ -26,6 +26,13 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+ACCOUNT_ACTIVATION_DAYS = 2
+
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+DEFAULT_FROM_EMAIL = 'webmaster@localhost'
+LOGIN_REDIRECT_URL = '/'
+
 
 # Application definition
 
@@ -94,3 +101,7 @@ TEMPLATE_DIRS = (
     )
 
 SITE_ID = 1
+
+
+
+
