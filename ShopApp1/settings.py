@@ -92,3 +92,5 @@ STATICFILES_DIRS = (
 TEMPLATE_DIRS = (
         './templates/',
     )
+
+SITE_ID = 1
