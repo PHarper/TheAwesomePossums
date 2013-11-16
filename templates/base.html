@@ -45,6 +45,7 @@
       
         </div>
         <div class="navbar-collapse collapse">
+          
           {% block login %}
           <form action="accounts/login/?next{{ next|default:"/"}}" method="post" id="login-form" class="navbar-form navbar-right">
             {% if not user.is_authenticated %}
