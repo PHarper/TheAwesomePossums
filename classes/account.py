@@ -1,23 +1,24 @@
 #Account class (for Checking and Savings)
 
+#stores Username, Email, Password from user
 
 class User:
-    def __init__(self, first, last, username, password):
-        self.first = first
-        self.last = last
+    def __init__(self, username, email, password):
+
         self.username = username
+        self.email = email
         self.password = password
         pass
 
-    def get_name(self):
-        return '%s %s'%(self.first, self.last)
+    def get_email(self):
+        return self.email
     def get_username(self):
         return self.username
     def get_password(self):
         return self.password
 
     def __str__(self):
-        return 'Name: %s Username: %s Password: %s' %(self.get_name(), self.username, self.password)
+        return 'Username: %s Email: %s Password: %s' %(self.username, self.email, self.password)
 
 class Account:
     def __init__(self, user, accountNumber, balance):
@@ -28,7 +29,7 @@ class Account:
 
     def __str__(self):
         #print "Account __str__ = %s" %(self.balance)
-        return 'Name: %s Username: %s Password: %s. Your account number %s has $%.02f remaining' %(self.User.get_name(), self.User.get_username(), self.User.get_password(), self.accountNumber, self.balance)
+        return 'Username: %s Email: %s Password: %s. Your account number %s has $%.02f remaining' %(self.User.get_username(), self.User.get_email(), self.User.get_password(), self.accountNumber, self.balance)
 
 
     def withdraw(self, withdrawAmount):
@@ -86,16 +87,4 @@ class Checking(Account):
         else:
             return "insufficient funds!"
 
-p = User('Skyler','Saville', 'firemouth55@gmail.com', 'thisismypassword')
-bobsChecking = Checking(p, '17890', 412.76, 50)
-bobsSaving = Saving(p, '17891', 3087.44, 2.3)
-bobsChecking.withdraw(100)
-bobsChecking.deposit(49.30)
-bobsSaving.deposit(500)
-print bobsSaving
-bobsSaving.add_interest()
-bobsChecking.withdraw(10000)
-bobsSaving.withdraw(10000)
-print p
-print bobsSaving
-print bobsChecking
+
