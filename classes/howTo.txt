@@ -1,0 +1,7 @@
+How to use Indigent
+
+We've tried to simplify this down to the basics (as much as possible).  One side of Indigent is dedicated to keep track of items that are purchased on a fairly regular basis.  The other side of Indigent helps to keep track of your money, as it works to save for specific items that are on a wish list, created by you.  
+
+Indigent can keep track of reoccurring purchases, as well as one time impulse buys.  It can be a very simple way to keep track of monthly expenses, but it's fully capable of offering a more robust and sophisticated experience as well.
+
+For some easy tips on how to make Indigent work for you, follow us on Twitter @IndigentApp.

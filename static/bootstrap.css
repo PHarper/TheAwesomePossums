@@ -5241,6 +5241,7 @@ a.list-group-item.active > .badge,
 
 .jumbotron p {
   line-height: 1.4;
+  width: 80%;
 }
 
 .container .jumbotron {
